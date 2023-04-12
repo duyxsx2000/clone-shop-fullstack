@@ -1,0 +1,29 @@
+.fromPost{
+   display: block;
+}
+.fromPost>input{
+    font-size: 25px;
+    width: 100%;
+    margin: 5px 0px;
+    border: none;
+    background-color: aqua;
+
+}
+.fromPostlabel{
+    font-size: 25px;
+}
+.fromPost button{
+    font-size: 25px;
+    width: 100%;
+    background-color: rgb(52, 92, 224);
+}
+.fromPost>div{
+    display: flex;
+    margin: 5px 0px;
+    
+}
+.fromPost div>input{
+    font-size: 20px;
+    margin: 0px 10px;
+   
+}

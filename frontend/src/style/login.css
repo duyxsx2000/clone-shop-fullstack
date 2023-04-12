@@ -1,0 +1,78 @@
+
+.login{
+   background-color: rgba(112, 106, 106, 0.5);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-image: url('../img/th (4).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+.fromLogin{
+    width: 50%;
+    display:block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+    box-shadow: 0px 0px 17px 2px cornsilk;
+}
+
+.fromLogin>div{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.fromLogin>input{
+   width: 80%;
+    font-size: 25px;
+    border: none;
+    background-color: rgba(5, 1, 1, 0);
+    outline: none;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    border-bottom: 1.5px solid rgb(252, 244, 244);
+    color: rgb(255, 255, 255);
+    
+}
+.fromLogin>input:focus{
+    border-bottom: 1.5px solid rgb(49, 46, 219);
+}
+
+
+
+
+.loginButton{
+    
+   
+    justify-content: end;
+    
+}
+
+.fromLogin .button1{
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    background-color: rgb(97, 125, 218);
+    outline: none;
+    margin: 5px 0px;
+    color: rgb(255, 255, 255);
+}
+.fromLogin .button2{
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    background-color: rgb(97, 125, 218);
+    outline: none;
+    margin:  0px;
+    color: rgb(255, 255, 255);
+}
+.fromLogin button:hover{
+    background-color: rgb(11, 52, 187) ;
+    color: #000;
+}
+.xxx>a{
+    color: rgb(250, 0, 0);
+    text-decoration: none;
+}

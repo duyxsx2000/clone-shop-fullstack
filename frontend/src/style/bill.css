@@ -1,0 +1,25 @@
+.Bill{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.Bill>div{
+margin: 10px 20px;
+border: 1px solid rgb(185, 178, 178);
+border-radius: 15px;
+padding: 5px;
+
+}
+.title{
+    text-align: center;
+}
+.Bill>button{
+    font-size: 25px;
+    width: 100%;
+   border-radius: 25px;
+   border: none;
+   background-color: rgb(61, 99, 224);
+   color: #ffffff;
+}
+.Bill>button:hover{
+    color: #ff0101;
+}

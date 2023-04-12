@@ -1,0 +1,91 @@
+.App{
+ height: 100%;
+display: flex;
+flex-direction: column;
+}
+.headerTop1{
+  display: flex;
+  justify-content:space-around;
+}
+.headerTop1>ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0px;
+  height: 50px;
+  align-items: center;
+}
+
+.headerTop1>ul>li{
+  margin: 20px;
+}
+.headerTop1>ul>li>a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.hearder{
+  background-color: #ee4d2d;
+  
+}
+.hearder img{
+  width: 100px;
+}
+.hearderBotton{
+  display: flex;
+  justify-content: space-evenly;
+}
+.hearderBotton>div>a>i{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  
+}
+.hearderBotton div input{
+ font-size: 20px;
+ border: none;
+ width: 300px;
+}
+.hearderBotton>div{
+  display: flex;
+  margin-bottom: 5px;
+}
+.hearderBotton .xxx i{
+  font-size: 25px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  top: 10px;
+  
+}
+.cartBoss{
+  display:flex;
+  position: relative
+
+}
+.cartBoss1{
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: -200px;
+  background-color: rgb(255, 255, 255);
+}
+
+.rightSidebar{
+  background-color: #aa9d9b;
+  height:50px;
+  text-align: center;
+  width: 100%;
+}
+.content{
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lerftSidebar{
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 100%;
+}
