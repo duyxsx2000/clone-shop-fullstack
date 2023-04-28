@@ -2,9 +2,8 @@ import React, { useContext, useState } from "react";
 import { AppContext } from "../contex/AppContext";
 import '../style/cart.css'
 import DataCart from "./cartContent";
-import Login from "../loginS/login";
 import { Link } from "react-router-dom";
-import Bill from "./bill";
+
 
 
 function Cart(){

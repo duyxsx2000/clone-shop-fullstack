@@ -12,6 +12,8 @@ export const AppProvider = ({children})=>{
     const [dataLogIn,setDataLogIn]  = useState(0)
     const [resInPost,setResInPost] = useState("")
     const [ dataDetail,setDataDetail] = useState('')
+    const [ dataListContent,setDataListContent] = useState([])
+    const [token,setToken] =useState()
     
     const dataAmoutCart = dataContext.map(function(x){
         return (
@@ -35,7 +37,10 @@ export const AppProvider = ({children})=>{
                                        resInPost,
                                        setResInPost,
                                        dataDetail,
-                                       setDataDetail}}>
+                                       dataListContent,
+                                       setDataListContent,
+                                       setDataDetail,
+                                       token,setToken}}>
         {children}
     </AppContext.Provider>
 }

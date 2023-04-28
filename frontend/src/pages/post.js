@@ -67,7 +67,7 @@ function postData(event){
   return(
        
        <div>
-        <div>post</div>
+        <h1>post</h1>
         <form className="fromPost">
             
             <input type="text"  
@@ -87,7 +87,7 @@ function postData(event){
                    onChange={setAmount}
                    placeholder='AMOUNT' />
             <div>      
-              <label> uploand file image</label>
+              
               <input type="file"
                     
                     onChange={SetImage}
@@ -95,10 +95,7 @@ function postData(event){
             </div> 
             <button className="postData" onClick={postData}>Thêm mặt hàng</button>
         </form>
-        <img src={dataImage}></img> 
-        <div> NAME: {newData.name}</div>
-        <div> PRICE: {newData.gia}</div>
-        <div> AMOUNT: {newData.soluong}</div>
+       
        </div>
     )
 }

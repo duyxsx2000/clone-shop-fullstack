@@ -3,17 +3,26 @@ import  bodyParser  from "body-parser";
 import router from './routers/router.js'
 import mongoose from "mongoose";
 import cors from 'cors'
+import  jwt  from "jsonwebtoken";
+import { createToken, verifyToken } from "./JWTaction.js";
+
+
 
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/data-web1')
         .then(()=>{
             console.log('ket noi thanh cong voi database');
+            // verifyToken(createToken()) 
+            
          })
          .catch((error)=>{'ket noi that bai',error})
 
 const app = express();
 const port = 5000;
+
+
+
 
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -33,6 +42,7 @@ app.get('/',(req,res)=>{
     res.send('hello web test')
 })
 ;
+
 app.use('/data',router)
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

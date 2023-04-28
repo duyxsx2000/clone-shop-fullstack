@@ -13,15 +13,32 @@
     display: block;
     text-align: center;
 }
-.fromRegister>div{
+.registrationline{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    
 
 }
-.fromRegister>div>input{
+.registrationline>input{
     font-size: 25px;
-}.fromRegister>button{
+    outline: none;
+    border: none;
+    background-color: rgb(172, 210, 243);
+    
+}
+.fromRegister>button{
     font-size: 20px;
     margin: 10px;
+    background-color: rgb(107, 94, 230);
+    border: none;
+    padding: 5px;
+    
+}
+.fromRegister>button:hover{
+    background-color: rgb(224, 72, 72);
+    color: #ffffff;
 }
 #aaa{
     font-size: 25px;

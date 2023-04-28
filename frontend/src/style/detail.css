@@ -1,7 +1,8 @@
 .DetailItem{
     background-color: rgb(255, 255, 255);
-    margin-top: 50px;
+    margin-top: 0px;
     max-height: 90%;
+    z-index: 50;
 }
 .contentDetailItem>img{
     border-bottom: 1px solid black;

@@ -6,7 +6,7 @@ import '../style/bill.css'
 
 
 function Bill(){
-  const {resInPost,setResInPost,tongTien,setTongTien} = useContext(AppContext) 
+  const {resInPost,setResInPost,tongTien,setTongTien,token} = useContext(AppContext) 
   const [taiKhoan,setTaiKhoan] =  useState(resInPost.data[0].taikhoan)
   const [notification,setNotification] = useState(false)
   
@@ -14,13 +14,14 @@ function Bill(){
      
   function ThanhToan(){
     
-      const abc = {...resInPost}
-      abc.data[0].taikhoan = abc.data[0].taikhoan - tongTien
-      console.log(abc.data[0].taikhoan);
-      console.log(abc);
-      setResInPost(abc)
-      axios.post('http://localhost:5000/data/upDataU',resInPost)
-     setTongTien(0)    
+    const abc = {...resInPost}
+    abc.data[0].taikhoan = abc.data[0].taikhoan - tongTien
+  
+    setResInPost(abc)
+   const response = axios.post('http://localhost:5000/data/upDataU',{resInPost, headers: { Authorization: token }})
+   
+   console.log(response.data);
+   setTongTien(0)    
    }
    
   return(
